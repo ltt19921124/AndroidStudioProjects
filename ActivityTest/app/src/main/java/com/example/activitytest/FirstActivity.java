@@ -32,15 +32,16 @@ public class FirstActivity extends BaseActivity {
 //                startActivity(intent);
 //                Intent intent = new Intent(Intent.ACTION_VIEW);
 //                intent.setData(Uri.parse("https://www.baidu.com"));
+
 //                Intent intent = new Intent(Intent.ACTION_DIAL);
 //                intent.setData(Uri.parse("tel:10086"));
 //                String data = "Hello SecondActivity";
 //                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
 //                intent.putExtra("extra_data",data);
                 Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
-                startActivityForResult(intent,1);
+//                startActivityForResult(intent,1);
+                startActivity(intent);
 
-//                startActivity(intent);
             }
         });
     }

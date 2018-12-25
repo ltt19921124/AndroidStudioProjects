@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startService(startIntent);
                 break;
             case R.id.stop_service:
+
                 Intent stopService = new Intent(this,MyService.class);
                 stopService(stopService);
                 break;
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.unbind_service:
                 unbindService(connection);
                 break;
-             default:
+            default:
                  break;
         }
     }

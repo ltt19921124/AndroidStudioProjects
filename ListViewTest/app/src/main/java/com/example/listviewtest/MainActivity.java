@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 //                MainActivity.this,android.R.layout.simple_list_item_1,data
 //        );
         FruitAdapter adapter = new FruitAdapter(MainActivity.this,
-                R.layout.fruit_item,fruitList);
+                R.layout.fruit_item,fruitList);//传入上下文、子项布局id、需要适配的数据
         ListView listView = findViewById(R.id.list_view);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

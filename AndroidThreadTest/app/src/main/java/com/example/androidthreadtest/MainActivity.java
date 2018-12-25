@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 case UPDATE_TEXT:
                     textView.setText("Nice to meet you");
                     break;
-                 default:
-                     break;
+                default:
+                    break;
             }
         }
     };

@@ -32,6 +32,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        new Thread() {
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        //业务代码
+                    }
+                });
+            }
+        }.start();
+
     }
 
     @Override
